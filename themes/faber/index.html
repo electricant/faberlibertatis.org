@@ -1,0 +1,84 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+{% if meta.description %}
+	<meta name="description" content="{{ meta.description }}"> 
+{% endif %}{% if meta.robots %}
+	<meta name="robots" content="{{ meta.robots }}">
+{% endif %}
+	<link rel="icon" href="/res/favicon.png" type="image/png" />
+	<link rel="stylesheet" href="{{ theme_url }}/assets/css/style.css">
+	<link rel="stylesheet" href="{{ theme_url }}/assets/css/foundation.css">
+	<script src="{{ theme_url }}/assets/js/vendor/modernizr.js"></script>
+
+</head>
+<body>
+	<header id="header">
+		<nav class="top-bar" data-topbar>
+			<ul class="title-area">
+				<li class="name">
+					<h1><a href="/">{{ site_title }}</a></h1>
+				</li>
+				<li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+			</ul>
+			<section class="top-bar-section">	
+				<ul class="left">
+					{% for page in pages %}
+					{% if not page.date %}
+					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+					{% endif %}
+					{% endfor %}
+				</ul>
+			</section>
+		</nav>
+	</header>
+
+	<p><center><img src="/res/logo.png" alt="APS Faber Libertatis"></center></p>
+	<section id="content">
+		<div class="row">
+			<div class="large-12 columns">
+				{{ content }}
+				{% if meta.description == 'index' %}
+					{% for page in pages %}
+				        {%if page.date %}
+						<h3>{{ page.title }}</h3>
+						<p>Autore: {{ page.author }}</p>
+						{{ page.excerpt }}
+						<p><a href="{{ page.url }}">
+						Leggi tutto</a></p>
+						<hr></hr>
+        				{% endif %}
+					{% endfor %}
+				{% endif %}
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="row">
+			<div class="large-12 columns">
+				Realizzato con <a href="http://picocms.org/">Pico</a>,
+	<a href="https://github.com/electricant/faberlibertatis.org">vedi il codice</a>.
+				<br></br>
+	<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/it/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/3.0/it/88x31.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/it/">Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 3.0 Italia</a>.
+			</div>
+		</div>
+	</footer>
+
+	<script src="{{ theme_url }}/assets/js/vendor/jquery.js"></script>
+	<script src="{{ theme_url }}/assets/js/foundation.min.js"></script>
+	<script>
+		$(document).foundation();
+	</script>
+</body>
+<script type="text/javascript">
+function resizeIframe(obj) {
+	obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+}
+</script>
+</html>

@@ -115,14 +115,18 @@ class Pico {
 	protected function load_plugins()
 	{
 		$this->plugins = array();
-		$plugins = $this->get_files(PLUGINS_DIR, '.php');
-		if(!empty($plugins)){
-			foreach($plugins as $plugin){
-				include_once($plugin);
-				$plugin_name = preg_replace("/\\.[^.\\s]{3}$/", '', basename($plugin));
-				if(class_exists($plugin_name)){
-					$obj = new $plugin_name;
-					$this->plugins[] = $obj;
+
+	        $subdirs = glob(PLUGINS_DIR . '*' , GLOB_ONLYDIR);
+	        foreach ($subdirs as $dir) {
+			$plugins = $this->get_files($dir, '.php');
+			if(!empty($plugins)){
+				foreach($plugins as $plugin){
+					include_once($plugin);
+					$plugin_name = preg_replace("/\\.[^.\\s]{3}$/", '', basename($plugin));
+					if(class_exists($plugin_name)){
+						$obj = new $plugin_name;
+						$this->plugins[] = $obj;
+					}
 				}
 			}
 		}

@@ -1,108 +1,51 @@
 /*
-Title: Welcome
-Description: This description will go in the meta description tag
+Title: Home
+Description: Associazione Faber Libertatis - informatica libera, informatica etica
+Author: Paolo, Flavio, Associazione Faber Libertatis
 */
 
-## Welcome to Pico
+## Le origini
+Nel maggio 2003 si tenne a Padova una fiera dell'associazionismo e del
+volontariato, [Civitas](http://www.civitasonline.it/), presso la quale venne
+organizzata da [Unimondo](http://www.unimondo.org/) una conferenza a proposito
+di come il **Software Libero** possa contribuire alla risoluzione del **divario
+digitale**.
 
-Congratulations, you have successfully installed [Pico](http://picocms.org/). Pico is a stupidly simple, blazing fast, flat file CMS.
+In seguito a quest'esperienza, **Manu** iniziò a maturare il proposito di
+impegnarsi in prima persona per dare un proprio (minimo) contributo alla "causa"
+della lotta al divario digitale: il cosidetto
+[trashware](http://trashware.linux.it/), ovvero **il recupero di hardware
+obsoleto**, il suo **ripristino con Software Libero** ed il **riutilizzo per
+scopi di utilità sociale**. Determinante fu sicuramente l'incontro, proprio a
+Civitas, con due attivisti del [GOLEM](http://golem.linux.it/), gruppo pioniere 
+del trashware in Italia.
 
-### Creating Content
+Nell'ottobre successivo, Manu decise di attivarsi. Iniziò a contattare persone
+che sapeva interessate all'argomento, a cominciare da un grande appassionato di 
+vecchi calcolatori ed accanito sostenitore del Software Libero, ovvero **Hugh**,
+e per la fine di novembre, grazie anche al determinante aiuto di un parroco
+padovano che fornì la sede, **Don Fernando**, partì un laboratorio informatico
+per il recupero delle macchine: nacque così il **Progetto Faber**.
 
-Pico is a flat file CMS, this means there is no administration backend and database to deal with. You simply create `.md` files in the "content-sample"
-folder and that becomes a page. For example, this file is called `index.md` and is shown as the main landing page. 
+Le idee fondamentali che formano la base teorica dell'attività sono presentate
+nel nostro [manifesto](/manifesto).
 
-If you create a folder within the content-sample folder (e.g. `content-sample/sub`) and put an `index.md` inside it, you can access that folder at the URL 
-`http://yoursite.com/sub`. If you want another page within the sub folder, simply create a text file with the corresponding name (e.g. `content-sample/sub/page.md`)
-and you will be able to access it from the URL `http://yoursite.com/sub/page`. Below we've shown some examples of content-sample locations and their corresponing URL's:
+## L'Associazione
+_siamo i mogliori, spacchiamo culi_
 
-<table>
-	<thead>
-		<tr><th>Physical Location</th><th>URL</th></tr>
-	</thead>
-	<tbody>
-		<tr><td>content-sample/index.md</td><td>/</td></tr>
-		<tr><td>content-sample/sub.md</td><td>/sub</td></tr>
-		<tr><td>content-sample/sub/index.md</td><td>/sub (same as above)</td></tr>
-		<tr><td>content-sample/sub/page.md</td><td>/sub/page</td></tr>
-		<tr><td>content-sample/a/very/long/url.md</td><td>/a/very/long/url</td></tr>
-	</tbody>
-</table>
+## Le nostre attività
 
-If a file cannot be found, the file `content-sample/404.md` will be shown.
+### Il Trashware
 
-### Text File Markup
+### L'educazione
 
-Text files are marked up using [Markdown](http://daringfireball.net/projects/markdown/syntax). They can also contain regular HTML.
+### Assistenza
 
-At the top of text files you can place a block comment and specify certain attributes of the page. For example:
+### Recenti:
 
-	/*
-	Title: Welcome
-	Description: This description will go in the meta description tag
-	Author: Joe Bloggs
-	Date: 2013/01/01
-	Robots: noindex,nofollow
-	*/
+<iframe src="/eventi" style="border-style: none; width: 100%;" onload="resizeIframe(this)"></iframe>
 
-These values will be contained in the `{{ meta }}` variable in themes (see below).
+[Vedi tutti gli eventi](/tutti_gli_eventi)
 
-There are also certain variables that you can use in your text files:
+## Partecipa anche tu!
 
-* <code>&#37;base_url&#37;</code> - The URL to your Pico site
-
-### Themes
-
-You can create themes for your Pico installation in the "themes" folder. Check out the default theme for an example of a theme. Pico uses
-[Twig](http://twig.sensiolabs.org/documentation) for it's templating engine. You can select your theme by setting the `$config['theme']` variable
-in config.php to your theme folder.
-
-All themes must include an `index.html` file to define the HTML structure of the theme. Below are the Twig variables that are available to use in your theme:
-
-* `{{ config }}` - Conatins the values you set in config.php (e.g. `{{ config.theme }}` = "default")
-* `{{ base_dir }}` - The path to your Pico root directory
-* `{{ base_url }}` - The URL to your Pico site
-* `{{ theme_dir }}` - The path to the Pico active theme directory
-* `{{ theme_url }}` - The URL to the Pico active theme directory
-* `{{ site_title }}` - Shortcut to the site title (defined in config.php)
-* `{{ meta }}` - Contains the meta values from the current page
-	* `{{ meta.title }}`
-	* `{{ meta.description }}`
-	* `{{ meta.author }}`
-	* `{{ meta.date }}`
-	* `{{ meta.date_formatted }}`
-	* `{{ meta.robots }}`
-* `{{ content-sample }}` - The content-sample of the current page (after it has been processed through Markdown)
-* `{{ pages }}` - A collection of all the content-sample in your site
-	* `{{ page.title }}`
-	* `{{ page.url }}`
-	* `{{ page.author }}`
-	* `{{ page.date }}`
-	* `{{ page.date_formatted }}`
-	* `{{ page.content-sample }}`
-	* `{{ page.excerpt }}`
-* `{{ prev_page }}` - A page object of the previous page (relative to current_page)
-* `{{ current_page }}` - A page object of the current_page
-* `{{ next_page }}` - A page object of the next page (relative to current_page)
-* `{{ is_front_page }}` - A boolean flag for the front page
-
-Pages can be used like:
-
-<pre>&lt;ul class=&quot;nav&quot;&gt;
-	{% for page in pages %}
-	&lt;li&gt;&lt;a href=&quot;{{ page.url }}&quot;&gt;{{ page.title }}&lt;/a&gt;&lt;/li&gt;
-	{% endfor %}
-&lt;/ul&gt;</pre>
-
-### Plugins
-
-See [http://pico.dev7studios.com/plugins](http://picocms.org/plugins)
-
-### Config
-
-You can override the default Pico settings (and add your own custom settings) by editing config.php in the root Pico directory. The config.php file
-lists all of the settings and their defaults. To override a setting, simply uncomment it in config.php and set your custom value.
-
-### Documentation
-
-For more help have a look at the Pico documentation at [http://picocms.org/docs](http://picocms.org/docs)

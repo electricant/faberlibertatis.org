@@ -7,5 +7,6 @@ Description: Documenti dell'Associazione Faber Libertatis
 In questa sezione trovi i documenti della vita sociale di Faber Libertatis A.P.S.
 
 * [Manifesto](/documenti/manifesto)
+* [Statuto](/documenti/statuto)
 * [Consiglio Direttivo](/documenti/consiglio_direttivo)
 * [Requisiti minimi per il recupero di materiale informatico](/documenti/requisiti_minimi_recupero)

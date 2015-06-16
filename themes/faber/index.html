@@ -28,8 +28,9 @@
 			</ul>
 			<section class="top-bar-section">	
 				<ul class="left">
+					<li><a href="/">Home</a></li>
 					{% for page in pages %}
-					{% if not page.date %}
+					{% if not page.date and page.title != 'Home'%}
 					<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 					{% endif %}
 					{% endfor %}
@@ -80,6 +81,4 @@
 function resizeIframe(obj) {
 	obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
 }
-</script>
-</body>
-</html>
+</script></body></html>

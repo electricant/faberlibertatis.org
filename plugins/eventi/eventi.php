@@ -7,8 +7,7 @@
  */
 
 require_once 'MySQLBackend.inc';
-
-define('NUM_RECENT', 5);
+require_once 'config-eventi.php';
 
 class Eventi {
 	private $mostRecent;
@@ -23,21 +22,17 @@ class Eventi {
 		$this->allEvents = false;
 	
 		$this->backend = new MySQLBackend();
-		/* Set default locale for dates*/
-		setlocale(LC_TIME, 'it_IT');
 	}
 	/*
 	 * Pico hooks
 	 */
 	public function request_url(&$url) {
-		// /eventi points to the 5 most recent events
-		if ($url == 'eventi')
+		if ($url == MOST_RECENT_URL)
 			$this->mostRecent = true;
-		else if ($url == 'eventi/all')
+		else if ($url == ALL_EVENTS_URL)
 			$this->allEvents = true;
-		else if ($url == 'eventi/admin')
-			$this->admin = true;		
-				
+		else if ($url == ADMIN_URL)
+			$this->admin = true;
 	}
 	
 	public function before_render(&$twig_vars, &$twig, &$template) {

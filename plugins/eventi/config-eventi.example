@@ -1,0 +1,26 @@
+<?php
+/*
+ * Config file for 'eventi' plugin
+ */
+// set locale for time and date
+setlocale(LC_TIME, 'it_IT');
+
+// URL to use for the most recent events
+define('MOST_RECENT_URL', 'eventi');
+// number of most recent events to show
+define('NUM_RECENT', 5);
+
+// URL for all the events
+define('ALL_EVENTS_URL', 'eventi/all');
+
+// URL to add/delete events
+define('ADMIN_URL', 'eventi/admin');
+
+/*
+ * Database parameters (MySQL)
+ */
+define('MYSQL_SERVERNAME', 'localhost');
+define('MYSQL_USERNAME', '');
+define('MYSQL_PASSWORD', '');
+
+?>

@@ -1,17 +1,14 @@
 <?php
 
 require_once 'iEventsBackend.inc';
-
-define('SERVERNAME', 'localhost'); // TODO: move to config.inc
-define('USERNAME', 'faber_eventi');
-define('PASSWORD', 'F04eventi');
+require_once 'config-eventi.php';
 
 class MySQLBackend implements iEventsBackend {
 	private $conn; // database connection
 	
 	function __construct() {
-		$this->conn = new mysqli(SERVERNAME, USERNAME, PASSWORD,
-			'faber_eventi');
+		$this->conn = new mysqli(MYSQL_SERVERNAME, MYSQL_USERNAME, 
+			MYSQL_PASSWORD, 'faber_eventi');
 		if ($this->conn->connect_error) {
 			die("Failed connecting to the database!" . $this->conn->connect_error);
 		}

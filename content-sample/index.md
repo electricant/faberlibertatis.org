@@ -43,7 +43,7 @@ quindi in grado di rilasciare, ad esempio, ricevute per la donazione di
 materiale, di stipulare accordi e contratti e così via.
 
 È possibile leggere il nostro [statuto](/documenti/statuto) e, qualora se ne
-condividessero le finalità, si può richiedere di diventare [socio](/aiutaci).
+condividessero le finalità, si può richiedere di [diventare socio](/aiutaci).
 
 L'Associazione è iscritta al [Registro del Comune di Padova delle associazioni
 e delle cooperative sociali, al n. 1568](http://www.padovanet.it/nonprofit/ricerca.php?id=1568) e all'[Albo del Comune di Venezia delle associazioni, al n. 2610](http://www2.comune.venezia.it/associazioni/).
@@ -137,7 +137,7 @@ Se preferisci interagire in tempo reale puoi ricorrere invece ad [IRC](/contatti
 Il passo successivo è quello di venirci a trovare presso la sua sede. Se quello
 che facciamo ti ispira l'ulteriore passo è di divenire socio dell'Associazione
 di Promozione Sociale "Faber Libertatis".
-Per farlo, si devono accettare i termini dello [Statuto dell'Associazione](/ducumenti/statuto), compilare l'opportuno
+Per farlo, si devono accettare i termini dello [Statuto dell'Associazione](/documenti/statuto), compilare l'opportuno
 [modulo di ammissione](/documenti/modulo_ammissione) e quindi consegnarlo, a
 mano oppure inviarlo in sede, pagando entro i termini indicati la quota
 associativa.

@@ -1,9 +1,8 @@
 <?php
 /**
+ * Main class for the event manager.
  *
- * @author Gilbert Pellegrom
- * @link http://picocms.org
- * @license http://opensource.org/licenses/MIT
+ * @author: Paolo Scaramuzza
  */
 
 require_once 'MySQLBackend.inc';
@@ -48,7 +47,29 @@ class Eventi {
 			exit;
 		} else if ($this->admin) {
                         header($_SERVER['SERVER_PROTOCOL'] . ' 200 OK');
-                        $this->showAdmin();
+                        session_start();
+			// if login parse post data
+			if ($_POST['type'] === "login") {
+				if (($_POST['username'] === ADMIN_USERNAME) &&
+					(ADMIN_PW === hash('sha256', $_POST['password'])))
+                			$_SESSION['login_expire'] = time() + 60;
+				else
+                			$_SESSION['login_expire'] = -1;
+			}
+
+                	if ($_SESSION['login_expire'] > time()) {
+				$_SESSION['login_expire'] = time() 
+					+ (60 * LOGIN_EXPIRE_MIN);
+				/*
+				 * Regenerate session for security
+				 * See:
+				 * https://stackoverflow.com/questions/22965067/when-and-why-i-should-use-session-regenerate-id
+				 */
+				session_regenerate_id(true);
+				$this->showAdmin();
+			} else {
+				$this->showLogin();
+			}
                         exit;
 		}
 	}
@@ -56,13 +77,116 @@ class Eventi {
 	/*
 	 * Helper functions
 	 */
+	private function showLogin() {
+?>	
+		<html><head>
+		</head><body>
+
+                <p>Login form</p>
+		<form action="" method="post">
+		Username:<br>
+		<input type="text" name="username">
+		<br>Password:<br>
+		<input type="password" name="password">
+		<br><br>
+		<input type="hidden" name="type" value="login">
+		<input type="submit" value="Login">
+		</form>
+<?php
+		if (isset($_SESSION['login_expire'])) { 
+			if($_SESSION['login_expire'] > 0)
+				echo '<p>Autenticazione scaduta</p>';
+			else
+				echo '<p>Autenticazione fallita</p>';
+		}
+                echo '</body></html>';
+	}
+
 	private function showAdmin() {
-		echo '<html><head>';
-		echo '</head><body>';
+		// parse post data (event management related)
+		if ($_POST['type'] === 'add') {
+			$date_int = strtotime(str_replace('/', '-', 
+				$_POST['date']));
+			$this->backend->addEvent($date_int, $_POST['text'],
+				$_POST['url']);	
+		} else if ($_POST['type'] === 'del') {
+			$this->backend->removeEvent($_POST['id']);
+		}
+?>
+		<!DOCTYPE html>
+		<html><head>
+		<script>
+		function postAdd() {
+			var date = document.getElementById("date").value;
+			var text = document.getElementById("text").value;
+			var url = document.getElementById("url").value;
+			
+			var http = new XMLHttpRequest();
+                        var params ="type=add&date=" + date +
+				"&text=" + text + "&url=" + url;
 
-		echo 'Pannello di amministrazione';
+                        http.open("POST", window.location.href, true);
+                        //Send the proper header information
+                        http.setRequestHeader("Content-type", 
+                                "application/x-www-form-urlencoded");
+                        http.setRequestHeader("Content-length", params.length);
+                        http.setRequestHeader("Connection", "close");
 
-		echo '</body></html>';
+                        http.onreadystatechange = function() {
+				if(http.readyState == 4 && http.status == 200){
+                                        location.reload(true);
+                                }
+                        }
+                        http.send(params);
+		}
+		function postDel(id) {
+			var http = new XMLHttpRequest();
+			var params ="type=del&id=" + id;
+
+			http.open("POST", window.location.href, true);
+			//Send the proper header information
+			http.setRequestHeader("Content-type", 
+				"application/x-www-form-urlencoded");
+			http.setRequestHeader("Content-length", params.length);
+			http.setRequestHeader("Connection", "close");
+
+			http.onreadystatechange = function() {
+				if(http.readyState == 4 && http.status == 200){
+					location.reload(true);
+				}
+			}
+			http.send(params);
+		}
+		</script></head><body><center>
+		<h1>Pannello di amministrazione</h1>
+		<table style="width: 75%" border="0">
+		<col width="25%">
+		<col width="50%">
+		<col width="25%">
+		<tr>
+		<td align="center">Data</td>
+		<td align="center">Testo</td>
+		<td align="center">URL</td>
+		</tr><tr>
+		<td align="center"><input type="date" id="date"></td>
+		<td align="center"><input type="text" id="text" style="width:100%"></td>
+		<td align="center"><input type="text" id="url"></td>
+		<td align="center"><button onclick="postAdd()">+</button></td>
+		</tr>
+<?php
+		$events = $this->backend->getMostRecent();
+		foreach ($events as $event) {
+			$date = strftime('%x', $event['date']);
+			echo '<tr>';
+			echo '<td align="center">' . $date . '</td>';
+			echo '<td align="center">' . $event['description'] . '</td>';
+			echo '<td align="center">' . $event['url'] . '</td>';
+			echo '<td><button onclick="postDel('. $event['id'] .
+				 ')">X</button></td>';
+			echo '</tr>';
+		}
+		echo '</table>';
+		echo '</center></body></html>';
 	}
 
 	private function showEvents($number = -1) {

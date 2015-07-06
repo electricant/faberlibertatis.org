@@ -29,6 +29,6 @@ interface iEventsBackend {
 	/*
 	 * Remove a single event.
 	 */
-	public function removeEvent($date, $description);
+	public function removeEvent($id);
 }
 ?> 

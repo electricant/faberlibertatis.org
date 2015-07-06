@@ -16,6 +16,13 @@ define('ALL_EVENTS_URL', 'eventi/all');
 // URL to add/delete events
 define('ADMIN_URL', 'eventi/admin');
 
+// username and password (SHA-256) for management panel
+define('ADMIN_USERNAME', '');
+define('ADMIN_PW', '');
+
+// expire time (minutes) for login data
+define('LOGIN_EXPIRE_MIN', 10);
+
 /*
  * Database parameters (MySQL)
  */

@@ -6,12 +6,25 @@ require_once 'config-eventi.php';
 class MySQLBackend implements iEventsBackend {
 	private $conn; // database connection
 	
+	/*
+	 * CONSTRUCTOR:
+	 *
+	 * Used to setup the database connection
+	 */
 	function __construct() {
 		$this->conn = new mysqli(MYSQL_SERVERNAME, MYSQL_USERNAME, 
 			MYSQL_PASSWORD, 'faber_eventi');
 		if ($this->conn->connect_error) {
 			die("Failed connecting to the database!" . $this->conn->connect_error);
 		}
+	}
+	/*
+	 * DESTRUCTOR:
+	 *
+	 * Tears down the database connection created by the constructor
+	 */
+	function __destruct() {
+		$this->conn->close();
 	}
 
 	public function getMostRecent($number = -1) {
@@ -39,12 +52,19 @@ class MySQLBackend implements iEventsBackend {
 	}
 
         public function addEvent($date, $description, $url = ""){
-
+		// use a prepared statement for security
+		$prep = $this->conn->prepare("INSERT INTO eventi 
+			(date, description, url) VALUES (?, ?, ?);");
+		$prep->bind_param("iss", $date, $description, $url);
+		$prep->execute();
+		$prep->close();
 	}
 
-        public function removeEvent($date, $description){
+        public function removeEvent($id){
+		$prep = $this->conn->prepare("DELETE FROM eventi WHERE id = ?");
+		$prep->bind_param('i', $id);
+		$prep->execute();
+		$prep->close();
 	}
 }
-
-
 ?>

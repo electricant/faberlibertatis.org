@@ -80,26 +80,43 @@ class Eventi {
 	private function showLogin() {
 ?>	
 		<html><head>
+		<title>Log In</title>
+		<link rel="stylesheet" type="text/css" href="/plugins/eventi/css/style.css">
+		<link rel="stylesheet" type="text/css" href="/plugins/eventi/css/foundation-icons.css">
 		</head><body>
-
-                <p>Login form</p>
-		<form action="" method="post">
-		Username:<br>
-		<input type="text" name="username">
-		<br>Password:<br>
-		<input type="password" name="password">
-		<br><br>
-		<input type="hidden" name="type" value="login">
-		<input type="submit" value="Login">
-		</form>
 <?php
-		if (isset($_SESSION['login_expire'])) { 
-			if($_SESSION['login_expire'] > 0)
-				echo '<p>Autenticazione scaduta</p>';
-			else
-				echo '<p>Autenticazione fallita</p>';
-		}
-                echo '</body></html>';
+                if (isset($_SESSION['login_expire'])) {
+                        if($_SESSION['login_expire'] > 0) {
+				echo '<div class="error">';
+                                echo '<p><i class="fi-alert bigerror"></i>';
+				echo 'Autenticazione scaduta</p>';
+				echo '</div>';
+                        } else {
+				echo '<div class="error">';
+				echo '<p><i class="fi-alert bigerror"></i>';
+                                echo 'Autenticazione fallita</p>';
+				echo '</div>';
+			}
+                }
+?>
+		<div class="login">
+		<form action="" method="post">
+		
+		<p class="form">Username<br>
+		<input type="text" name="username" class="input-text">
+		</p>
+		<p class="form">Password<br>
+		<input type="password" name="password" class="input-text">
+		</p>
+		<input type="hidden" name="type" value="login">
+		<p class="submit">
+		<input type="submit" value="Log In" class="submit-button">
+		</p>
+		</form>
+		</div>
+		
+		</body></html>
+<?php
 	}
 
 	private function showAdmin() {

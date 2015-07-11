@@ -97,6 +97,8 @@ class Eventi {
                                 echo 'Autenticazione fallita</p>';
 				echo '</div>';
 			}
+			// avoid showing errors multiple times
+			unset($_SESSION['login_expire']);
                 }
 ?>
 		<div class="login">

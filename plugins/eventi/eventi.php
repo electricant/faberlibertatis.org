@@ -81,6 +81,7 @@ class Eventi {
 ?>	
 		<html><head>
 		<title>Log In</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="/plugins/eventi/css/style.css">
 		<link rel="stylesheet" type="text/css" href="/plugins/eventi/css/foundation-icons.css">
 		</head><body>

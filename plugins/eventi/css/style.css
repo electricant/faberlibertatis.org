@@ -2,19 +2,22 @@
 body {
 	background-color: #A0C8FB;
 	text-align: center;
+
+	margin: 0 auto;
+	margin-top: 3em;
 }
 /* box for fail messages */
 .error {
 	text-align: left;
 	background-color: white;
 	width: 18em;
+	border-radius: 1px;
 	
 	margin: auto;
-	margin-top: 3em;
 	margin-bottom: 0.5em;
 
-	padding-top: 0.25em;
-	padding-bottom: 0.25em;
+	padding-top: 0.1em;
+	padding-bottom: 0.1em;
 
 	-webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
         -moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
@@ -31,6 +34,7 @@ body {
 /* Create a box for login data */
 .login {
 	background-color: white;
+	border-radius: 1px;
 	
 	margin: auto;
 	padding-top: 2em;	
@@ -41,7 +45,6 @@ body {
 	-moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
 	box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
 }
-/* Reduce the size if the screen is small */
 
 /* Style form elements: big and spaced */
 .form {
@@ -60,19 +63,45 @@ input {
 	width: 100%;
 	height: 2em;
 	font-size: 16px;
-}
 
+	border-radius: 1px;
+}
+.input-text:hover {
+	border-color: #F89406;
+	-webkit-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+	-moz-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+	box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
 /* Big beefy button */
 .submit {
 	width: 12em;
-	height: 2em;
+	height: 2.5em;
 	margin: auto;
 }
 .submit-button {
-	width: 100%;
-	height: 100%;
+	color: #FFF;
+	background-color: #F89406;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+	 -webkit-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.75);
 
 	font-size: 14px;
         font-weight: 600;
 
+	width: 100%;
+        height: 100%;
+	border: medium none;
+	border-radius: 2px;
+}
+.submit-button:active {
+	-webkit-box-shadow: inset 0px 2px 3px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 2px 3px -1px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 2px 3px -1px rgba(0,0,0,0.75);
+}
+.submit-button:focus {
+	outline: none;
+}
+.submit-button::-moz-focus-inner {
+	border: 0;
 }

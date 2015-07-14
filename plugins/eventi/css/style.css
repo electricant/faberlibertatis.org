@@ -6,6 +6,12 @@ body {
 	margin: 0 auto;
 	margin-top: 3em;
 }
+@media screen and (max-width: 480px) {
+	body {
+		margin-top: 1em;
+	}
+}
+
 /* box for fail messages */
 .error {
 	text-align: left;
@@ -72,7 +78,7 @@ input {
 	-moz-box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 	box-shadow: inset 0px 1px 2px 0px rgba(0, 0, 0, 0.25);
 }
-/* Big beefy button */
+/* Big beefy buttons */
 .submit {
 	width: 12em;
 	height: 2.5em;
@@ -104,4 +110,94 @@ input {
 }
 .submit-button::-moz-focus-inner {
 	border: 0;
+}
+/* Inser events into cards */
+.event-card {
+        background-color: white;
+        border-radius: 1px;
+
+        margin: auto;
+	margin-bottom: 0.5em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        width: 75%;
+
+        -webkit-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.75);
+}
+@media screen and (max-width: 800px) {
+	.event-card {
+		width: 90%;
+	}
+}
+/* Different input text for event details */
+.small {
+	width: 20%;
+	display: inline-block;
+}
+.big {
+	width: 45%;
+	display: inline-block;
+}
+@media screen and (max-width: 480px) {
+	.small {
+		width: 90%;
+		margin-top: 0.5em;
+	}
+	.big {
+		width: 90%;
+		margin-top: 0.5em;
+	}
+}
+/* big and fancy buttons */
+button {
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+         -webkit-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.75);
+        box-shadow: 0px 2px 3px -1px rgba(0,0,0,0.75);
+
+	font-size: 16px;
+        font-weight: 600;
+
+	height: 2em;
+        border: medium none;
+        border-radius: 2px;	
+}
+button:active {
+        -webkit-box-shadow: inset 0px 2px 3px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 2px 3px -1px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 2px 3px -1px rgba(0,0,0,0.75);
+}
+button:focus {
+        outline: none;
+}
+button::-moz-focus-inner {
+        border: 0;
+}
+/* Style for the add button */
+.add {
+	color: #26A65B;
+	float: right;
+	margin-right: 1%;
+}
+/* Style for remove button */
+.remove {
+	color: #E33100;
+	float: right;
+	margin-right: 1%;
+}
+@media screen and (max-width: 480px) {
+	.add {
+		float: none;
+		width: 90%;
+		margin: auto;
+		margin-top: 0.5em;
+	}
+	.remove {
+		float: none;
+		width: 90%;
+		margin: auto;
+		margin-top: 0.5em;
+	}
 }

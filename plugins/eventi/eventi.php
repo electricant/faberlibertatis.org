@@ -135,6 +135,10 @@ class Eventi {
 ?>
 		<!DOCTYPE html>
 		<html><head>
+		<title>Amministrazione Eventi</title>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" type="text/css" href="/plugins/eventi/css/style.css">
+                <link rel="stylesheet" type="text/css" href="/plugins/eventi/css/foundation-icons.css">
 		<script>
 		function postAdd() {
 			var date = document.getElementById("date").value;
@@ -177,36 +181,32 @@ class Eventi {
 			}
 			http.send(params);
 		}
-		</script></head><body><center>
-		<h1>Pannello di amministrazione</h1>
-		<table style="width: 75%" border="0">
-		<col width="25%">
-		<col width="50%">
-		<col width="25%">
-		<tr>
-		<td align="center">Data</td>
-		<td align="center">Testo</td>
-		<td align="center">URL</td>
-		</tr><tr>
-		<td align="center"><input type="date" id="date"></td>
-		<td align="center"><input type="text" id="text" style="width:100%"></td>
-		<td align="center"><input type="text" id="url"></td>
-		<td align="center"><button onclick="postAdd()">+</button></td>
-		</tr>
+		</script></head><body>
+		<div class="event-card">
+		<input type="date" id="date" class="input-text small"
+			placeholder="Data (GG/MM/AAAA)">
+		<input type="text" id="text" class="input-text big"
+			placeholder="Descrizione Evento">
+                <input type="text" id="url" class="input-text small"
+			 placeholder="Link all'articolo">
+                <button onclick="postAdd()" class="fi-plus add"></button>
+		</div>
 <?php
 		$events = $this->backend->getMostRecent();
 		foreach ($events as $event) {
 			$date = strftime('%x', $event['date']);
-			echo '<tr>';
-			echo '<td align="center">' . $date . '</td>';
-			echo '<td align="center">' . $event['description'] . '</td>';
-			echo '<td align="center">' . $event['url'] . '</td>';
-			echo '<td><button onclick="postDel('. $event['id'] .
-				 ')">X</button></td>';
-			echo '</tr>';
+			echo '<div class="event-card">' . "\n";
+			echo '<input type="text" class="input-text small" '.
+				' value="' . $date . '" readonly> ';
+			echo '<input type="text" class="input-text big" ' .
+				' value="' . $event['description'] . '" readonly>';
+			echo ' <input type="text" class="input-text small" ' .
+				'value="' . $event['url'] . '" readonly>';
+			echo ' <button class="fi-x remove" ' . 
+				'onclick="postDel('. $event['id'] . ')"></button>';
+			echo '</div>' . "\n";
 		}
-		echo '</table>';
-		echo '</center></body></html>';
+		echo '</body></html>';
 	}
 
 	private function showEvents($number = -1) {

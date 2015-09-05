@@ -12,3 +12,6 @@ Thumbs.db
 
 # User config
 config*.php
+
+# Locally stored databases
+*.db

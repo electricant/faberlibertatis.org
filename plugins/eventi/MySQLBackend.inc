@@ -1,5 +1,24 @@
 <?php
-
+/*
+ * Use MySQL to store the events.
+ *
+ * The database, named 'faber_eventi', stores all the data in a single table
+ * ('eventi'). The table is created by using the following command:
+ * CREATE TABLE `eventi` (
+ * 	`id` int(11) NOT NULL AUTO_INCREMENT,
+ *	`date` bigint(20) NOT NULL,
+ *	`description` text NOT NULL,
+ *	`url` varchar(255) DEFAULT NULL,
+ *	PRIMARY KEY (`id`)
+ * )
+ *
+ * Column description:
+ * 	id          - Used as an identifier mainly when deleting events
+ *	date        - Date stored as an unix timestamp in a 64bit integer
+ *	              (64bits are chosen to avoid 'Year 2038 problem')
+ *	description - Text description for the event
+ *	url         - Url inside the website for an article describing the event
+ */
 require_once 'iEventsBackend.inc';
 require_once 'config-eventi.php';
 

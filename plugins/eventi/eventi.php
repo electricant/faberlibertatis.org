@@ -5,6 +5,7 @@
  * @author: Paolo Scaramuzza
  */
 
+require_once 'SQLiteBackend.inc';
 require_once 'MySQLBackend.inc';
 require_once 'config-eventi.php';
 
@@ -19,8 +20,14 @@ class Eventi {
 		$this->mostRecent = false;
 		$this->admin = false;
 		$this->allEvents = false;
-	
-		$this->backend = new MySQLBackend();
+
+		if ('sqlite' == BACKEND)
+			$this->backend = new SQLiteBackend();
+		else if ('mysql' == BACKEND)
+			$this->backend = new MySQLBackend();
+		else
+			die("Invalid database type: " . BACKEND .
+				". Expected 'sqlite' or 'mysql'.");
 	}
 	/*
 	 * Pico hooks
@@ -46,8 +53,9 @@ class Eventi {
 			$this->showEvents();
 			exit;
 		} else if ($this->admin) {
-                        header($_SERVER['SERVER_PROTOCOL'] . ' 200 OK');
-                        session_start();
+			header($_SERVER['SERVER_PROTOCOL'] . ' 200 OK');
+			session_start();
+			
 			// if login parse post data
 			if ($_POST['type'] === "login") {
 				if (($_POST['username'] === ADMIN_USERNAME) &&
@@ -56,8 +64,9 @@ class Eventi {
 				else
                 			$_SESSION['login_expire'] = -1;
 			}
-
-                	if ($_SESSION['login_expire'] > time()) {
+			
+			// Decide wether to show the login or the admin page
+			if ($_SESSION['login_expire'] > time()) {
 				$_SESSION['login_expire'] = time() 
 					+ (60 * LOGIN_EXPIRE_MIN);
 				/*

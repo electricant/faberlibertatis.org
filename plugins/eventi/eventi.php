@@ -221,7 +221,7 @@ class Eventi {
 	private function showEvents($number = -1) {
 		echo '<html><head>';
 		echo '<meta charset="iso-8859-1">'; // default mysql charset
-                echo '<link rel="stylesheet" href="/themes/faber/assets/css/foundation.css">';
+                echo '<link rel="stylesheet" href="/themes/faber/assets/css/foundation.min.css">';
                 echo '</head><body><ul>';
 		$events = $this->backend->getMostRecent($number);
 

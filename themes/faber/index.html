@@ -15,7 +15,11 @@
 	<link rel="stylesheet" href="{{ theme_url }}/assets/css/style.css">
 	<link rel="stylesheet" href="{{ theme_url }}/assets/css/foundation.css">
 	<script src="{{ theme_url }}/assets/js/vendor/modernizr.js"></script>
-
+	<script type="text/javascript">
+		function resizeIframe(obj) {
+    		obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+		}
+	</script>
 </head>
 <body>
 	<header id="header">
@@ -77,8 +81,4 @@
 	<script>
 		$(document).foundation();
 	</script>
-<script type="text/javascript">
-function resizeIframe(obj) {
-	obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-}
-</script></body></html>
+</body></html>

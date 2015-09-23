@@ -31,4 +31,4 @@ interface iEventsBackend {
 	 */
 	public function removeEvent($id);
 }
-?> 
+?>

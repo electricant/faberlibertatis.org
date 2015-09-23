@@ -11,3 +11,10 @@
 	background: #f1f1f1;
 	text-align: center;
 }
+
+.top-bar {
+	background-color: #4183D7 !important;
+}
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: #4183D7 !important;
+}

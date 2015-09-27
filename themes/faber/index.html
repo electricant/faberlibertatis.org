@@ -33,6 +33,7 @@
 			<section class="top-bar-section">	
 				<ul class="left">
 					<li><a href="/">Home</a></li>
+					<li><a href="http://wiki.faberlibertatis.org">Wiki</a></li>
 					{% for page in pages %}
 					{% if not page.date and page.title != 'Home'%}
 					<li><a href="{{ page.url }}">{{ page.title }}</a></li>

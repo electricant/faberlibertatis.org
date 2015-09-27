@@ -18,3 +18,12 @@
 .top-bar-section li:not(.has-form) a:not(.button) {
 	background-color: #4183D7 !important;
 }
+.top-bar.expanded {
+	background-color: #2574A9;
+}
+.top-bar.expanded .title-area {
+	background-color: #2574A9 !important;
+}
+.top-bar.expanded .toggle-topbar a {
+	color: #D2D7D3 !important;
+}

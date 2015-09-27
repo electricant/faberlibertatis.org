@@ -1,6 +1,6 @@
 /*
 Title: Statuto
-Author: Paolo, APS Faber Libertatis
+Author: APS Faber Libertatis
 Date: 16/06/2015
 */
 # Statuto dell'A.P.S. Faber Libertatis

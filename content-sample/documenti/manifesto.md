@@ -2,6 +2,7 @@
 Title: Manifesto
 Author: Associazione Faber Libertatis
 Description: Manifesto dell'associazione
+Date: 16/06/2015
 */
 # Manifesto
 

@@ -9,6 +9,10 @@ require_once 'SQLiteBackend.inc';
 require_once 'MySQLBackend.inc';
 require_once 'config-eventi.php';
 
+// see also js/eventi.js which uses those URLs
+define('MOST_RECENT_URL', 'eventi');
+define('ALL_EVENTS_URL', 'eventi/all');
+
 class Eventi {
 	private $mostRecent;
 	private $allEvents;
@@ -219,24 +223,19 @@ class Eventi {
 	}
 
 	private function showEvents($number = -1) {
-		echo '<html><head>';
-		echo '<meta charset="iso-8859-1">'; // default mysql charset
-                echo '<link rel="stylesheet"
-					href="/themes/faber/assets/css/foundation.min.css">';
-				echo '<link rel="stylesheet"
-					href="/themes/faber/assets/css/style.css">';
-                echo '</head><body><ul>';
 		$events = $this->backend->getMostRecent($number);
-
+		
+		echo '<ul>';
 		foreach ($events as $event) {
 			$date = strftime('%A %e %B %G', $event['date']);
 			echo '<li><strong>' . $date . ':</strong>';
 			echo '<p>' . $event['description'];
 			if (!empty($event['url']))
-				echo '<a target="_parent" href="' . $event['url'] . '"> Leggi tutto</a>';
+				echo '<a target="_parent" href="' . $event['url'] . 
+					'"> Leggi tutto</a>';
 			echo '</p></li>';
 		}
-                echo '</ul></body></html>';
+		echo '</ul>';
 	}
 }
 ?>

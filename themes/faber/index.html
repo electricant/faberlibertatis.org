@@ -6,22 +6,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
-{% if meta.description %}
+	{% if meta.description %}
 	<meta name="description" content="{{ meta.description }}"> 
-{% endif %}{% if meta.robots %}
+	{% endif %}
+	{% if meta.robots %}
 	<meta name="robots" content="{{ meta.robots }}">
-{% endif %}
+	{% endif %}
 	<link rel="icon" href="/res/favicon.png" type="image/png" />
-
 	<link rel="stylesheet" href="{{ theme_url }}/assets/css/foundation.min.css">
 	<link rel="stylesheet" href="{{ theme_url }}/assets/css/style.css">
-
-	<script async src="{{ theme_url }}/assets/js/vendor/modernizr.js"></script>
-	<script type="text/javascript">
-		function resizeIframe(obj) {
-    		obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-		}
-	</script>
+	<script async src="/plugins/eventi/js/load_events.js"></script>
 </head>
 <body>
 	<header id="header">

@@ -31,8 +31,7 @@ e delle cooperative sociali, al n.1568](http://www.padovanet.it/nonprofit/ricerc
 e all'[Albo del Comune di Venezia delle associazioni, al n.2610](http://www2.comune.venezia.it/associazioni/).
 
 ## Eventi recenti:
-<iframe src="/eventi" style="border-style: none; width: 100%;" onload="resizeIframe(this)"></iframe>
-
+<div id="recent_events"></div>
 [Vedi tutti gli eventi](/tutti_gli_eventi)
 
 ## Partecipa

@@ -227,7 +227,7 @@ class Eventi {
 		
 		echo '<ul>';
 		foreach ($events as $event) {
-			$date = strftime('%A %e %B %G', $event['date']);
+			$date = utf8_encode(strftime('%A %e %B %G', $event['date']));
 			echo '<li><strong>' . $date . ':</strong>';
 			echo '<p>' . $event['description'];
 			if (!empty($event['url']))

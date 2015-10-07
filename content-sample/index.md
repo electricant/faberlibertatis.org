@@ -26,6 +26,8 @@ divario digitale ed il consumo critico.
 
 Per maggiori dettagli visita la pagina delle nostre [attività](/cosa_facciamo).
 
+[Consiglio Direttivo](/documenti/consiglio)
+
 L'Associazione è iscritta al [Registro del Comune di Padova delle associazioni
 e delle cooperative sociali, al n.1568](http://www.padovanet.it/nonprofit/ricerca.php?id=1568)
 e all'[Albo del Comune di Venezia delle associazioni, al n.2610](http://www2.comune.venezia.it/associazioni/).

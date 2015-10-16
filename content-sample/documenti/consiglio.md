@@ -10,4 +10,4 @@ In data 17 Maggio 2015 l'assemblea dell'associazione ha nominato:
  	* Flavio Agnoletto
 	* Paolo Scaramuzza
 	* Salvatore Munzone
-	* Mirco Romanato
+	* Mirko Bassa

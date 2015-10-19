@@ -11,7 +11,8 @@ possibile fare riferimento al seguente indirizzo:
 <pre style="font-size: 1.25em; border: dashed; text-align: center;">
 APS Faber Libertatis  
 p/o Parrocchia Santa Rita  
-via Santa Rita, 18 - 35126 Padova
+via Santa Rita, 18
+35126 Padova (PD)
 </pre>
 
 ## Sede di Padova
@@ -35,8 +36,10 @@ ritenuto necessario attivarsi per la creazione di una propria sezione a Venezia.
 L'indirizzo è il seguente:
 
 <pre style="font-size: 1.25em; border: dashed; text-align: center;">
-APS Faber Libertatis, sezione di Venezia    
-via Fratelli Bandiera, 158/A - 30175 Marghera (VE)
+APS Faber Libertatis
+Sezione di Venezia
+via Fratelli Bandiera, 158/A
+30175 Marghera (VE)
 </pre>
 
 Si veda [OpenStreetMap](http://osm.org/go/0IDOQeQJ--?way=27466551) oppure
@@ -84,8 +87,9 @@ L'Associazione ha un conto corrente di cui si riportano le coordinate bancarie:
 L'Associazione è iscritta ai seguenti Registri ed Albi:
 
 * Registro del Comune di Padova delle associazioni e delle cooperative sociali:
-	[numero registro 1568](http://www.padovanet.it/nonprofit/ricerca.php?id=1568);
-* Albo del Comune di Venezia delle associazioni: [numero registro 2610](http://www2.comune.venezia.it/associazioni/).
+	[numero registro 1568](http://www.padovanet.it/noprofit/spazio-web/1568);
+* Albo del Comune di Venezia delle associazioni:
+	[numero registro 2610](http://www2.comune.venezia.it/associazioni/visualizza_news.asp?id=1628393).
 
 ## Altri contatti
 A volte i soci dell'associazione si trovano on-line in:

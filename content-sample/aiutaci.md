@@ -8,7 +8,7 @@ Ti piacciono le [nostre idee](/documenti/manifesto) e desideri aiutare
 l'Associazione di Promozione Sociale Faber Libertatis? Puoi farlo, in molti modi
 diversi!
 
-### Diventa nostro volontario
+## Diventa nostro volontario
 Non è necessario essere un grande esperto di informatica per poter partecipare 
 ai nostri progetti, ma basta aver voglia di fare, di imparare, essere con la
 mente aperta e aver la coscienza dell'importanza che l'informatica (o la sua
@@ -34,7 +34,7 @@ informatico, oppure incontrarci durante una delle nostre manifestazioni:
 conoscerci dal vivo è sempre la cosa migliore, perché così potrai sentire dalla 
 nostra viva voce cosa facciamo e perché!
 
-### Promuovi un'iniziativa
+## Promuovi un'iniziativa
 Se conosci qualche situazione in cui sembra proprio che l'intervento del Faber
 sarebbe utile, puoi farti promotore di un nuovo progetto: l'Associazione è
 sempre disponibile a dare supporto, consigli, o ad accogliere nuove idee e modi
@@ -43,12 +43,12 @@ di procedere.
 Quando c'e' la voglia di fare qualcosa, gli altri ostacoli si superano!
 [Mettiti in contatto con noi](/contatti)
 
-### Fai conoscere le nostre iniziative
+## Fai conoscere le nostre iniziative
 Anche solo parlare dei problemi del digital divide, degli sprechi nel mondo
 dell'informatica, dei modi per evitarli, magari risparmiando pure, è
 un'attivita' che puoi svolgere nel tuo ambito, qualunque esso sia!
 
-### Fornitura di materiale
+## Fornitura di materiale
 Se conosci delle organizzazioni od enti che dismettono materiale informatico, 
 pensa a come potrebbe essere utilizzato! Se proprio non sai come potrebbe
 essere impiegato, chiedici se abbiamo dei progetti in corso che ne hanno
@@ -69,7 +69,7 @@ invecchiare. Noi vogliamo che il materiale continui ad essere usato!
 Se hai del materiale informatico che ritieni possa esserci utile,
 [contattaci](/contatti)!
 
-### Contributi economici
+## Contributi economici
 L'Associazione di Promozione Sociale Faber Libertatis non ha fini di lucro e
 sopravvive esclusivamente grazie al contributo dei soci e dei sostenitori.
 

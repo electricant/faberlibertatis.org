@@ -3,7 +3,7 @@ Title: Consiglio Direttivo
 Author: Paolo
 Date: 19/05/2015
 */
-## Consiglio direttivo
+# Consiglio direttivo
 In data 17 Maggio 2015 l'assemblea dell'associazione ha nominato:
  * Presidente: Matteo Gusso
  * Consiglieri:

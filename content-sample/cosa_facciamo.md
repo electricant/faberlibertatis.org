@@ -3,7 +3,7 @@ Title: Cosa Facciamo
 Description: Attività dell'Associazione Faber Libertatis
 Author: Paolo, Flavio, Associazione Faber Libertatis
 */
-## Le nostre attività
+# Le nostre attività
 [Vedi tutti gli eventi](/tutti_gli_eventi)
 
 Qui di seguito viene riportato l'articolo dello Statuto riguardante le finalità dell'Associazione.

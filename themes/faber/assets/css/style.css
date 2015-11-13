@@ -29,3 +29,11 @@ body {
 	max-width: 730px;
 	text-align: justify;
 }
+h1 {
+	font-size: 2.5em;
+	text-align: center;
+}
+h2 {
+	font-size: 2em !important;
+	text-align: left;
+}

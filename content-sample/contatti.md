@@ -3,7 +3,7 @@ Title: Contatti
 Description: Contatti per l'associazione Faber Libertatis
 Author: Paolo, APS Faber Libertatis
 */
-# Contatti:
+# Contatti
 ## Sede Legale
 Per comunicare con l'Associazione di Promozione Sociale Faber Libertatis è
 possibile fare riferimento al seguente indirizzo:
@@ -62,7 +62,7 @@ Sono disponibili alcuni indirizzi e-mail:
 * [webmaster@faberlibertatis.org](mailto:webmaster@faberlibertatis.org) per
 	contattare i gestori del sito.
 	
-### Liste di discussione
+## Liste di discussione
 Sono inoltre attive alcune liste di discussione pubbliche:
 
 * [faber](http://faberlibertatis.org/mailman/listinfo/faber): ad elevato
@@ -83,7 +83,7 @@ L'Associazione ha un conto corrente di cui si riportano le coordinate bancarie:
 * Intestato a: Associazione di Promozione Sociale Faber Libertatis, via Santa Rita, 18 35127 Padova
 * Codice fiscale: 92167500286
 
-## Registri e Albi:
+## Registri e Albi
 L'Associazione è iscritta ai seguenti Registri ed Albi:
 
 * Registro del Comune di Padova delle associazioni e delle cooperative sociali:

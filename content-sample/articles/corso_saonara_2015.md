@@ -30,6 +30,8 @@ Seguono alcuni link a dispense e slide, utili come materiale di riferimento.
 	* [Dispensa corso base](/content-sample/articles/saonara15/dispensa.pdf)
 	* [Dispensa navigazione con Mozilla Firefox](/content-sample/articles/saonara15/dispensa_firefox.pdf)
 	* [Dispensa gestione file e cartelle](/content-sample/articles/saonara15/dispensa_cartelle.pdf)
+	* [Dispensa posta elettronica](/content-sample/articles/saonara15/posta_elettronica.pdf)
+	* [Dispensa scrivere con OpenOffice](/content-sample/articles/saonara15/scrivere_con_openoffice.pdf)
 	* Lista in aggiornamento...
 
 Per qualsiasi dubbio, chiarimento o domanda inerente al corso fare riferimento

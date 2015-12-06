@@ -37,3 +37,10 @@ h2 {
 	font-size: 2em !important;
 	text-align: left;
 }
+li {
+	margin-bottom: 1.25em;
+	margin-left: 1em;
+}
+li p, li li {
+	margin-bottom: 0;
+}

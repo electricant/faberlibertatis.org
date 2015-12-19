@@ -22,7 +22,6 @@ Il Programma si articola attorno ai seguenti punti:
 	* La posta elettronica
 	* Introduzione alla videoscrittura
 	* Uso di un foglio di calcolo
-	* Sicurezza e uso avanzato del web
 
 Seguono alcuni link a dispense e slide, utili come materiale di riferimento.
 	* [Concetti base di informatica](/content-sample/articles/saonara15/info_base.pdf)

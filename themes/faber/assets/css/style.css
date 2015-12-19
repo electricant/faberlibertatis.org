@@ -33,6 +33,9 @@ h1 {
 	font-size: 2.5em;
 	text-align: center;
 }
+.name h1  {
+	text-align: left;
+}
 h2 {
 	font-size: 2em !important;
 	text-align: left;

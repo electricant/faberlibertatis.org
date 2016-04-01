@@ -17,12 +17,10 @@ Accettiamo la seguente tipologia di materiali:
 
  * computer completi;
  * portatili;
- * stampanti laser e multifunzione USB e di rete;
- * scanner USB;
  * monitor solo piatti (LCD), **non si accettano monitor a tubo catodico (CRT)**
 
-Materiale d'altro genere (ad esempio, computer Apple, componentistica sciolta,
-materiale di consumo, fotocopiatrici, centralini telefonici, fax) può essere
+Materiale d'altro genere (computer Apple, componentistica sciolta,
+materiale di consumo, fotocopiatrici, stampanti, scanner e fax) può essere
 valutato di volta in volta, pur sempre con il prerequisito fondamentale del
 **FUNZIONAMENTO** del materiale.
 
@@ -32,14 +30,10 @@ per le varie tipologie di materiale:
 
  * Computer:
 	* Processore: Pentium IV (dual core)
-	* RAM: 512 MB
-	* Disco: 40 GB
+	* RAM: 1 GB
+	* Disco: 80 GB (possibilmente SATA)
 
  * Monitor solo LCD
-
- * Stampanti laser e multifunzione, porta USB o di rete
-
- * Scanner A4 USB
 
 ## Quanta roba! Non ci capisco niente!
 Se non si è esperti d'informatica, potrebbe anche essere che vi siano difficoltà

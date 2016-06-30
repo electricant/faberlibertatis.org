@@ -22,13 +22,13 @@ al piano interrato della canonica.
 Vedi come raggiongerci con [OpenStreetMap](http://osm.org/go/0IBqX_nlC) oppure
 [Google Maps](https://maps.google.com/maps?q=via+santa+rita+18+padova&hl=it&ll=45.394088,11.88813&spn=0.004649,0.006201&sll=37.0625,-95.677068&sspn=42.766543,50.800781&hq=via+santa+rita+18&hnear=Padova,+Veneto,+Italia&t=m&z=17&iwloc=A).
 
-La sede è aperta al pubblico il Martedì e il Giovedì sera approssimativamente
-a partire dalle 21:30 fino alle 23:00. **ATTENZIONE: si consiglia di avvertire
+La sede è aperta il Martedì e il Giovedì sera approssimativamente a partire
+dalle 21:30 fino alle 23:00. **ATTENZIONE: si consiglia di avvertire
 sempre tramite mailing list o altro se è la prima volta che si viene in
 visita!**
 
-Il numero di telefono della sede (operativo solo negli orari di apertura al
-pubblico) è `340 1927222`.
+Il numero di telefono della sede (operativo solo negli orari di apertura) è
+`340 1927222`.
 
 ## Sede di Venezia
 L'Associazione, visti i numerosi interventi nel territorio veneziano, ha

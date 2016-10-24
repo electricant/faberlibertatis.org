@@ -50,8 +50,12 @@
 					{% for page in pages %}
 				        {%if page.date %}
 						<h3>{{ page.title }}</h3>
-						<p>Autore: {{ page.author }}</p>
-						{{ page.excerpt }}
+						<!--<p>Data: {{ page.date }} &emsp; Autore: {{ page.author }}</p>-->
+						<p style="text-align:left">
+						<span>Data: {{ page.date }}</span> &emsp;
+						<span style="white-space:nowrap">Autore: {{ page.author }}</span>
+						</p>
+						<!--{{ page.excerpt }} -->
 						<p><a href="{{ page.url }}">
 						Leggi tutto</a></p>
 						<hr></hr>

@@ -1,5 +1,16 @@
 /* Structure Styles
 /*---------------------------------------------*/
+body{
+   font-family: 'PTSansCaptionRegular', sans-serif;
+   font-weight: normal;
+   font-style: normal;
+}
+h1, h2, h3, h4, h5, h6, .top-bar-section ul li > a {
+	font-family: inherit;
+}
+.top-bar-section li {
+	margin-left: 0;
+}
 .footer {
 	padding: 1em 0;
 	margin-top: 1em;
@@ -29,12 +40,13 @@
 h1 {
 	font-size: 2.5em;
 	text-align: center;
+	margin: 1em 0 1em 0;
 }
 .name h1  {
 	text-align: left;
 }
 h2 {
-	font-size: 2em !important;
+	font-size: 2em;
 	text-align: left;
 }
 li {
@@ -43,4 +55,22 @@ li {
 }
 li p, li li {
 	margin-bottom: 0;
+}
+code {
+	white-space: nowrap;
+}
+/* reduced screen size */
+@media screen and (max-width: 480px) {
+	.row {
+		text-align: left;
+	}
+	p {
+		font-size: 0.9rem;
+	}
+	h1 {
+		font-size: 2.25rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
 }

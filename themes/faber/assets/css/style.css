@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6, .top-bar-section ul li > a {
 	text-align: justify;
 }
 h1 {
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	text-align: center;
 	margin: 1em 0 1em 0;
 }
@@ -46,8 +46,11 @@ h1 {
 	text-align: left;
 }
 h2 {
-	font-size: 2em;
+	font-size: 2rem;
 	text-align: left;
+}
+h3 {
+	font-size: 1.75rem;
 }
 li {
 	margin-bottom: 1.25em;

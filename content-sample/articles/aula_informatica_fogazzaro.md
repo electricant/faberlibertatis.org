@@ -21,8 +21,7 @@ Erano già presenti una decina di computer, la maggior parte dei quali piuttosto
 datati. Su alcuni era già stato installato Linux Mint ma nessuno era stato in
 grado di configurare correttamente la rete.
 
-### La soluzione:
-
+## La soluzione:
 Ci siamo subito attivati per fornire alla scuola 17 computer (16 per le
 postazioni e uno da usare come server) e alcuni monitor. Si è discusso a lungo
 su quale distribuzione utilizzare. Subito si è pensato ad Edubuntu, anche se
@@ -60,8 +59,7 @@ Notate in particolare gli indirizzi DNS utilizzati. Sono quelli del servizio
 Questi DNS bloccano tutto i contenuti non adatti ai bambini che possono trovarsi
 sul web, rendendo più sicura la navigazione.
 
-### Configurazione di LDAP
-
+## Configurazione di LDAP
 Gli account utente vengono distribuiti dal server tramite il protocollo
 [LDAP](https://it.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol).
 Dagli insegnanti ci è stato chiesto di avere un account utente per classe,
@@ -82,8 +80,7 @@ Se la cosa non ti interessa salta pure alla prossima sezione.
 
 **Continua nella prossima puntata...**
 
-### Il risultato:
-
+## Il risultato:
 Dopo tanta fatica siamo riusciti a consegnare il materiale alla scuola e
 configurare a dovere tutte le macchine. Attualmente manca ancora la parte di
 LDAP ma per il resto ci siamo. 

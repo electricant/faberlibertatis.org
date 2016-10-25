@@ -59,6 +59,17 @@ li p, li li {
 code {
 	white-space: nowrap;
 }
+img {
+	display: block;
+	margin: 0 auto 1.5em auto;
+	max-width: 90%;
+}
+.img-small {
+	max-width: 50%;
+}
+.img-med {
+	max-width: 75%;
+}
 /* reduced screen size */
 @media screen and (max-width: 480px) {
 	.row {
@@ -69,5 +80,11 @@ code {
 	}
 	h2 {
 		font-size: 1.5rem;
+	}
+	.img-small {
+		max-width: 90%;
+	}
+	.img-med {
+		max-width: 90%;
 	}
 }

@@ -61,7 +61,7 @@ code {
 }
 img {
 	display: block;
-	margin: 0 auto 1.5em auto;
+	margin: 0 auto 1.25rem auto; /* center, but same spacing as paragraphs */
 	max-width: 90%;
 }
 .img-small {

@@ -16,7 +16,7 @@ l'obbligo di comunicazione agli uffici competenti.
 
 ### Articolo 2 - Finalità
 La Associazione è apartitica, aconfessionale, non ha fini di lucro, è ispirata
-ai principi di democraza e svolge attività di promozione e utilità sociale.
+ai principi di democrazia e svolge attività di promozione e utilità sociale.
 
 I proventi delle attività non possono, in nessun caso, essere divisi tra i Soci,
 anche in forma indiretta.
@@ -39,7 +39,7 @@ Le finalità che la Associazione si propone sono in particolare:
  * Diffondere l'utilizzo consapevole degli strumenti informatici mediante una
    corretta alfabetizzazione informatica;
 
- * Educare alla conoscenza degli sutrumenti informatici, hardware e software;
+ * Educare alla conoscenza degli strumenti informatici, hardware e software;
 
  * Promuovere l'accessibilità del software libero mediante lo sviluppo di nuovo
    software libero, la manutenzione di quello esistente e la traduzione in
@@ -54,29 +54,30 @@ eccezione di quelle ad esse estremamente connesse o di quelle accessorie a
 quelle statutarie in quanto integrative delle stesse.
 
 La Associazione, al fine di assicurare il più completo conseguimento delle
-proprie finalità statutarie, può colaborare, coordinandosi e/o consorziandosi
+proprie finalità statutarie, può collaborare, coordinandosi e/o consorziandosi
 con altre associazioni, enti ed istituzioni di carattere pubblico o privato la
 cui attività sia coerente con le finalità dell'Associazione.
 
-La Associazione si impegna, per le proprie attività, software rilasciato sotto
-licienze ritenute non libere, salvo quando questo si renda necessari per predisporre l'hardware all'utilizzo di sfotware libero.
+L'Associazione si impegna, per le proprie attività, a non utilizzare software 
+rilasciato sotto licenze ritenute non libere, salvo quando questo si renda 
+necessario per predisporre l'hardware all'utilizzo di software libero.
 
 ### Articolo 3 - Soci
 Sono ammessi all'Associazione tutte le persone fisiche che ne condividono gli
 scopi e accettano il presente statuto e l'eventuale regolamento interno.
 
 L'organo competente a deliberare sulle domande di ammissione è l'Assemblea.
-Il dinego va motivato. Il richiedente nella domanda di ammissione le proprie
-complete generalità impegnandosi a versare la quota associativa.
+Il diniego va motivato. Il richiedente nella domanda di ammissione fornisce 
+le proprie complete generalità impegnandosi a versare la quota associativa.
 
 Ci sono tre categorie di soci:
- * Ordinari (versano la quota di iscrizione annulamente stabilita
-   dal'assemblea);
+ * Ordinari (versano la quota di iscrizione annualmente stabilita
+   dall'assemblea);
 
- * Sostenitori (oltre alla quota ordinaria, eerogano contribuzione volontaria
+ * Sostenitori (oltre alla quota ordinaria, erogano contribuzione volontaria
    straordinaria);
 
- * Benemeriti (persone nominate tali da'Assemblea per meriti particolari
+ * Benemeriti (persone nominate tali dall'assemblea per meriti particolari
    acquisiti a favore dell'Associazione).
 
 Non è ammessa la categoria di soci temporanei. La quota associativa è
@@ -84,7 +85,7 @@ intrasmissibile.
 
 ### Articolo 4 - Diritti e doveri dei soci
 I soci hanno diritto di eleggere gli organi sociali e di essere eletti negli
-stessi. Essi hanno diritto di essere informati sulle attivita dell'Associazione
+stessi. Essi hanno diritto di essere informati sulle attività dell'Associazione
 e di essere rimborsati nelle spese effettivamente sostenute nello svolgimento
 dell'attività prestata.
 
@@ -194,13 +195,13 @@ previsioni di spesa e di entrata per l'esercizio annuale successivo.
  
 Il rendiconto economico-finanziario è predisposto dal Consiglio direttivo e
 approvato dall'assemblea generale ordinaria con le maggioranze previste dal
-presente statuto, depositato presso la sede dell'associazione almeno 20 gg.
-prima dell'assemblea e può essere consultato da ogni associato. 
+presente statuto, depositato presso la sede dell'associazione almeno 20
+giorni prima dell'assemblea e può essere consultato da ogni associato. 
 
 Il conto consuntivo dev'essere approvato entro il 30 aprile dell'anno successivo
 alla chiusura dell'esercizio sociale. 
 
-### Articolo 15 - Scioglimento e devoluzione del partimonio
+### Articolo 15 - Scioglimento e devoluzione del patrimonio
 L'eventuale scioglimento dell'Associazione sarà deciso soltanto dall'assemblea
 con le modalità di cui all'art. 9 ed in tal caso, il patrimonio, dopo la
 liquidazione, sarà devoluto a finalità di utilità sociale. 

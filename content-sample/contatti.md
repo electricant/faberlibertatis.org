@@ -44,12 +44,14 @@ Per contatti diretti sono disponibili i seguenti indirizzi e-mail:
 ## Liste di discussione
 Sono inoltre attive alcune liste di discussione pubbliche:
 
-* [faber](http://faberlibertatis.org/mailman/listinfo/faber): ad elevato
-	traffico, attraverso la quale i partecipanti all'Associazione
-	discutono, progettano e organizzano le varie attività;
+* [faber](http://faberlibertatis.org/mailman/listinfo/faber): attraverso la
+	quale i partecipanti all'Associazione discutono, progettano e organizzano
+	le varie attività;
 * [faber-annunci](http://faberlibertatis.org/mailman/listinfo/faber-annunci):
-	per essere sempre aggiornati sull'attività dell'Associazione. E'
-	inoltre possibile consultare l'archivio delle precedenti comunicazioni.
+	per essere sempre aggiornati sull'attività dell'Associazione. 
+
+Di entrambe le liste è possiblie consultare l'archivio delle precedenti
+comunicazioni, risalente più o meno al 2003.
 
 ## Coordinate bancarie
 L'Associazione ha un conto corrente di cui si riportano le coordinate bancarie:
@@ -69,7 +71,9 @@ L'Associazione è iscritta ai seguenti Registri ed Albi:
 	[numero registro 1568](http://www.padovanet.it/noprofit/spazio-web/1568);
 
 ## Altri contatti
-Di rado i soci dell'associazione si trovano on-line in:
 
-* IRC - canale #faber sui server [Freenode](irc://irc.freenode.net)
+* [Telegram](https://t.me/joinchat/AAAAAD_T5q4w4aizXwcJfQ) Per chattare con i
+  soci del più e del meno.
+* IRC - canale #faber sui server [Freenode](irc://irc.freenode.net) purtroppo
+  ormai defunto ma presente per memoria storica.
 

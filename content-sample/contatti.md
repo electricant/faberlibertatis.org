@@ -8,16 +8,19 @@ Author: Paolo, APS Faber Libertatis
 Per comunicare con l'Associazione di Promozione Sociale Faber Libertatis è
 possibile fare riferimento al seguente indirizzo:
 
-<pre style="font-size: 1.25em; border: dashed; text-align: center;">
+<pre style="font-size: 1.25em; border: dashed; text-align: center;
+	margin-bottom:1em;">
 APS Faber Libertatis
 p/o Parrocchia Santa Rita
 via Santa Rita, 18
 35126 Padova (PD)
 </pre>
 
-Utilizziamo gli spazi al piano interrato della canonica. Come raggiugerci:
- * [OpenStreetMap](http://osm.org/go/0IBqX_nlC) oppure
- * [Google Maps](https://maps.google.com/maps?q=via+santa+rita+18+padova&hl=it&ll=45.394088,11.88813&spn=0.004649,0.006201&sll=37.0625,-95.677068&sspn=42.766543,50.800781&hq=via+santa+rita+18&hnear=Padova,+Veneto,+Italia&t=m&z=17&iwloc=A).
+Utilizziamo gli spazi al piano interrato della canonica.
+
+Per sapere come raggiugerci puoi consultare
+[OpenStreetMap](http://osm.org/go/0IBqX_nlC) oppure
+[Google Maps](https://maps.google.com/maps?q=via+santa+rita+18+padova&hl=it&ll=45.394088,11.88813&spn=0.004649,0.006201&sll=37.0625,-95.677068&sspn=42.766543,50.800781&hq=via+santa+rita+18&hnear=Padova,+Veneto,+Italia&t=m&z=17&iwloc=A).
 
 La sede è aperta il Martedì e il Giovedì sera approssimativamente a partire
 dalle 21:30 fino alle 23:00.

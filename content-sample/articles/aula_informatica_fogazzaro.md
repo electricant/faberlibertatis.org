@@ -7,8 +7,10 @@ Author: Paolo Scaramuzza
 
 # Un'aula informatica open source
 
-A Giugno di quest'anno il nostro socio Federico ci segnala la necessità di
-ampliare e rinnovare l'aula informatica della scuola elementare Antonio
+<img style="margin-bottom: 1.5em; max-width: 100%" src="/content-sample/articles/fogazzaro/squola.jpg" alt="Intro">
+
+A Giugno di quest'anno (2016) il nostro socio Federico ci segnala la necessità
+di ampliare e rinnovare l'aula informatica della scuola elementare Antonio
 Fogazzaro di Chiesanuova (PD).
 
 Il primo passo è stato quello di recarci sul posto per capire la situazione e le
@@ -74,7 +76,7 @@ loro nome dove salvare gli esercizi proposti a lezione. Questi file saranno
 leggibili in tempo reale sul server dall'insegnante che potrà tenere traccia del
 progresso dei propri alunni.
 
-Ora un po'di dettagli da nerd su come è stato configurato il servizio LDAP sul 
+Ora un po'di dettagli da nerd su come è stato configurato il servizio LDAP sul
 *server* e sui *client* e come sono gestiti i permessi su file e *directory*.
 Se la cosa non ti interessa salta pure alla prossima sezione.
 
@@ -83,7 +85,7 @@ Se la cosa non ti interessa salta pure alla prossima sezione.
 ## Il risultato:
 Dopo tanta fatica siamo riusciti a consegnare il materiale alla scuola e
 configurare a dovere tutte le macchine. Attualmente manca ancora la parte di
-LDAP ma per il resto ci siamo. 
+LDAP ma per il resto ci siamo.
 
 Gli alunni possono connettersi ad internet ed usare i loro programmi preferiti.
 In questa foto ne vedete un gruppetto alle prese con i nuovi PC. È entusiasmante

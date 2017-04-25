@@ -4,6 +4,8 @@ Description: Associazione Faber Libertatis - informatica libera, informatica eti
 Author: Paolo, Flavio, Associazione Faber Libertatis
 */
 
+<img style="margin-top:2em; max-width:100%" src="/res/copertina.jpg" alt="Immagine di copertina">
+
 ## Chi siamo
 L'associazione di promozione sociale Faber Libertatis è un'associazione
 apartitica, aconfessionale e senza fini di lucro che opera nell'ambito

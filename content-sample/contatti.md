@@ -31,6 +31,14 @@ la prima volta che si viene in visita!**
 Il numero di telefono della sede (operativo solo negli orari di apertura) è
 `340 1927222`.
 
+Abbiamo anche usa seconda sede a Strà. L'indirizzo è il seguente:
+
+<pre style="font-size: 1.25em; border: dashed; text-align: center;
+	margin-bottom:1em;">
+Strada dei cent'anni, 10
+30039 sStra (VE)
+</pre>
+
 ## Posta elettronica
 Per contatti diretti sono disponibili i seguenti indirizzi e-mail:
 
@@ -51,7 +59,7 @@ Sono inoltre attive alcune liste di discussione pubbliche:
 	quale i partecipanti all'Associazione discutono, progettano e organizzano
 	le varie attività;
 * [faber-annunci](http://faberlibertatis.org/mailman/listinfo/faber-annunci):
-	per essere sempre aggiornati sull'attività dell'Associazione. 
+	per essere sempre aggiornati sull'attività dell'Associazione.
 
 Di entrambe le liste è possiblie consultare l'archivio delle precedenti
 comunicazioni, risalente più o meno al 2003.

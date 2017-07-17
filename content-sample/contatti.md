@@ -31,12 +31,12 @@ la prima volta che si viene in visita!**
 Il numero di telefono della sede (operativo solo negli orari di apertura) è
 `340 1927222`.
 
-Abbiamo anche usa seconda sede a Strà. L'indirizzo è il seguente:
+Abbiamo anche usa seconda sede a Stra (VE). L'indirizzo è il seguente:
 
 <pre style="font-size: 1.25em; border: dashed; text-align: center;
 	margin-bottom:1em;">
 Strada dei cent'anni, 10
-30039 sStra (VE)
+30039 Stra (VE)
 </pre>
 
 ## Posta elettronica
